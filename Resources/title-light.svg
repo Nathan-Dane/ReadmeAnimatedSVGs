@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg fill="none" viewBox="0 0 440 30" width="440" height="30" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                :root {
+                    --front: #1D1D1D;
+                    --grad: radial-gradient(
+                        circle at 100%,
+                        rgb(219, 104, 75) 0%,
+                        rgb(218, 139, 79) 75%,
+                        rgb(223, 104, 74) 100%
+                    );
+                }
+
+                #title {
+                    width: 31ch;
+                    padding-left: 5px;
+                    animation:
+                        typing 4s steps(31) forwards,
+                        toGradient 0s ease-in-out 4.05s forwards,
+                        slideOut 1.5s ease-in-out 2.5s forwards,
+                        slideIn  0.5s cubic-bezier(0.000, 0.575, 0.050, 1.000) 4s forwards,
+                        animatedTextGradient 3s linear infinite;
+                    background-image: var(--front);
+                    background-size: 200% auto;
+                    color: transparent;
+                    bakckground-clip: text;
+                }
+                .text {
+                    visibility: hidden;
+                    position: absolute;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    font-family: monospace;
+                    font-size: 24px;
+                    background: var(--front);
+                    opacity: .85;
+                    font-weight: bold;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                @keyframes typing {
+                    from { width: 0; visibility: visible; }
+                    1% { position: relative; }
+                    to { visibility: visible; position: relative; }
+                }
+                @keyframes toGradient {
+                    from { background-image: var(--front); }
+                    to { background-image: var(--grad); }
+                }
+                @keyframes animatedTextGradient {
+                    to { background-position: -200% center; }
+                }
+                @keyframes slideOut {
+                    from { padding-left: 5px; }
+                    to { padding-left: 0; }
+                }
+                @keyframes slideIn {
+                    from { padding-left: 0; }
+                    to { padding-left: 15px; }
+                }
+            </style>
+            <div id="title" class="text">Responsive Animated Readme SVGs</div>
+        </div>
+    </foreignObject>
+</svg>
