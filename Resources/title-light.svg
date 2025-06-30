@@ -7,9 +7,9 @@
                     --front: #1D1D1D;
                     --grad: radial-gradient(
                         circle at 100%,
-                        rgb(219, 104, 75) 0%,
-                        rgb(218, 139, 79) 75%,
-                        rgb(223, 104, 74) 100%
+                        #db684b 0%,
+                        #da8b4f 75%,
+                        #df684a 100%
                     );
                 }
 
