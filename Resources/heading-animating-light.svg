@@ -13,7 +13,9 @@
                 }
 
                 #heading {
-                    margin-top: -7px;
+                    position: absolute;
+                    margin: 0;
+                    line-height: 1;
                     animation: animatedTextGradient 3s linear infinite;
                     background-image: var(--grad);
                     background-size: 200% auto;
