@@ -185,13 +185,17 @@ This is the good one:
 ```html
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="Link to dark-mode version">
-  <img class="image" src="Link to dark-mode version" width="--px" height="--px">
+  <img class="image" src="Link to light-mode version" width="--px" height="--px">
 </picture>
 ```
 
 Requires two individual files (one light, one dark).
 
-Should be `raw.githubusercontent.com` links because reasons. Observe:
+Should be `raw.githubusercontent.com` links because reasons. There used to be issues with updating the images when they were relative links, so it is safer to use raw GitHub links.
+
+Using links means the repo must be public, unless you use links containing a token.
+
+Refer to the table below to ever see if there are issues:
 
 <table align="center">
   <thead>
@@ -232,3 +236,10 @@ JavaScript is not run
 Webkit does not pass `vw`, `vh`, `@media` queries
 
 Webkit freaks out when viewbox ≠ width and height
+
+Difference in browser display. Defaults vary in many ways, the main ones I had issues with:
+- Animations (Safari bruh)
+- Line height (Firefox bruh)
+- Masking
+- Fonts (Chrmium ,Firefox, Safari all have different defaults, and they vary in width)
+- `ch` units (Safari bruh)
