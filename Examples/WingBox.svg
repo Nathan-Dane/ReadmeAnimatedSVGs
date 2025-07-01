@@ -17,8 +17,8 @@
                     50% { transform: translateY(-5%); }
                 }
                 .containerR {
-                    width: 500px;
-                    height: 110px;
+                    width: 100%;
+                    height: 100%;
                     animation: rotate 3.5s ease-in-out infinite;
                 }  @keyframes rotate {
                     from, to { transform: rotate(-.4deg); }

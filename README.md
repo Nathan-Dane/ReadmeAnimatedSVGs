@@ -16,7 +16,7 @@ Assumes basic HTML and CSS knowledge.
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-animating.svg">
-    <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-animating-light.svg" style="height: 32px">
+    <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-animating-light.svg" style="height: 40px">
 </picture>
 
 Two types: `Raw SVG` and `HTML Embed`
@@ -145,7 +145,7 @@ Here is an example from my profile:
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-responsive.svg">
-    <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-responsive-light.svg" style="height: 32px">
+    <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-responsive-light.svg" style="height: 40px">
 </picture>
 
 They react to system and site light/dark themes
@@ -224,7 +224,7 @@ Refer to the table below to ever see if there are issues:
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-limitations.svg">
-    <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-limitations-light.svg" style="height: 32px">
+    <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-limitations-light.svg" style="height: 40px">
 </picture>
 
 Certain things are not possible, largely due to Webkit (Safari).
