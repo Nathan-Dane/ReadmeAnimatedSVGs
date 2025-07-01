@@ -5,21 +5,37 @@
     <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/title-light.svg" style="max-width: 95%; width: 740px">
 </picture>
 
+&nbsp;&nbsp;&nbsp;&nbsp; **Add _flair_ to your Readmes with some CSS.**
 
-Very cool and very useful. Add _Spice_.
+This is a tutorial and exploration for adding elements to GitHub Readmes (and some other _md documents_) that allow for much more variety and fanciness.
 
-Covers animation and theme responsiveness.
+The standard **MarkDown** feature set allows for very little variety, being little more than some left-aligned text, images, and tables.
 
-Assumes basic HTML and CSS knowledge.
+GitHub flavour markdown adds a handful of **HTML** abilities, like `Align` and `div` layouting. One other addition is `SVG` elements, which as it turns out, opens a door to many opportunities!
 
-
+> Basic **HTML** and **CSS** knowledge is assumed for this tutorial.
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-animating.svg">
     <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-animating-light.svg" style="height: 40px">
 </picture>
 
-Two types: `Raw SVG` and `HTML Embed`
+The secret is *that SVGs can contain CSS!*
+
+While we can't use CSS in its full power as discussed later in **Limitations**, we can still use `animations` and even more fancy stuff like `filters`:
+
+<div align="center">
+  <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Examples/Fade.svg">
+      <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Examples/Fade-light.svg" style="height: 35px">
+  </picture>
+</div>
+
+</br>
+
+For this case, we can define two types of SVG:
+* `Raw SVG`: A simple SVG, just with added CSS.
+* `HTML Embed`: Essentially an injected HTML document (which may include `<svg>` and `<path>` elements)
 
 <table align="center">
   <thead>
@@ -48,13 +64,14 @@ Two types: `Raw SVG` and `HTML Embed`
 
 > Code for all examples can be found in the `Examples` folder of this repository.
 
-They are implemented differently (Raw SVG has simplifications)
+As a `Raw SVG` has native CSS support, this is much simpler to implement.
 
 
 
 ### Raw SVG
 
-Uses regular SVG format:
+The standard simple SVG format looks like this:
+
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 x y">
@@ -62,7 +79,10 @@ Uses regular SVG format:
 </svg>
 ```
 
-Can simply add style element:
+It has `viewBox` dimensions, and a list of childeren, which may contain `<path>`, `<rect>`, `<polygon>`,`<circle>`, and `<g>`.
+
+Styling this with CSS is very straightforward, as you can simply add a `<style>` element before the children:
+
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 x y">
@@ -76,7 +96,9 @@ Can simply add style element:
 </svg>
 ```
 
-From here, same as usual. Define `@keyframes` and set `animation` on elements.
+> If you are unfamiliar with SVGs, notice that I can add _classes_, _IDs_, and _styles_ to the child elements in the same way as usual HTML ones.
+
+From here, it's the same as usual. You can define `@keyframes`, set `animation` on elements, and other CSS properties.
 
 Below is an example. The static SVG is the unedited output from Illustrator, and the animated one is an example of how to implement simple keyframe animations with CSS.
 
@@ -90,16 +112,20 @@ Below is an example. The static SVG is the unedited output from Illustrator, and
   <tbody>
     <tr>
       <td align="center">
-        <img class="image" src="Examples/Rocket.svg" width="100px">
+        <a href="https://github.com/Nathan-Dane/ReadmeAnimatedSVGs/blob/main/Examples/Rocket.svg" target="_blank">
+          <img class="image" src="Examples/Rocket.svg" width="100px">
+        </a>
       </td>
       <td align="center">
-        <img class="image" src="Examples/RocketAnimated.svg" width="100px">
+        <a href="https://github.com/Nathan-Dane/ReadmeAnimatedSVGs/blob/main/Examples/RocketAnimated.svg" target="_blank">
+          <img class="image" src="Examples/RocketAnimated.svg" width="100px">
+        </a>
       </td>
     </tr>
   </tbody>
 </table>
 
-Again, raw code for all examples can be seen in the `Examples` folder in this repository.
+Again, raw code for all examples can be seen in the `Examples` folder in this repository. _(Click to see source)_
 
 ---
 
