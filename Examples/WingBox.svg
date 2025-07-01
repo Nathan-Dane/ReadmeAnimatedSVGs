@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg fill="none" viewBox="0 0 500 110" width="500" height="110" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                :root {
+                    --fg: white;
+                }
+
+                .containerY {
+                    animation: enter 2s ease-in-out 2s backwards, hover 6s ease-in-out 4s infinite;
+                }  @keyframes enter {
+                    from { transform: translateY(10px); opacity: 0; }
+                    to { transform: translateY(0); opacity: 1; }
+                }  @keyframes hover {
+                    from, to { transform: translateY(0); }
+                    50% { transform: translateY(-5%); }
+                }
+                .containerR {
+                    width: 500px;
+                    height: 110px;
+                    animation: rotate 3.5s ease-in-out infinite;
+                }  @keyframes rotate {
+                    from, to { transform: rotate(-.4deg); }
+                    50% { transform: rotate(.4deg); }
+                }
+
+                #box {
+                    opacity: .4;
+                    fill: var(--fg);
+                }
+
+                #box-content {
+                    display: flex;
+                    padding: 8px;
+                    flex-direction: row-reverse;
+                    margin-left: 103px;
+                    margin-top: 18px;
+                }
+
+                #repo-icon-back {
+                    text-align: center;
+                    background: linear-gradient(143deg, rgba(69,180,180,1) 0%, rgba(69,170,150,1) 100%);
+                    aspect-ratio: 1;
+                    height: 100%;
+                    border-radius: 20%;
+                    box-shadow: 0 0 28px 0 rgba(69,180,180,.35);
+                }
+
+                #box-content-fill {
+                    background: #ffffff10;
+                }
+                #box-content-fill > * {
+                    position: absolute;
+                    color: var(--fg);
+                }
+            </style>
+
+            <div class="containerY">
+                <div class="containerR">
+                    <svg height="110" width="500" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                        <path id="box" d="m493.42,10.69c-.32-.34-1.24-.52-1.65-.33-13.15,5.85-27.92,7.23-42.56,8.91-6.74.77-13.56,1.27-20.35,1.86-7.18.63-13.55,3.04-18.66,7.61-2.28,2.04-4.38,4.36-5.99,7.66v-4.59c0-11.89-9.64-21.53-21.53-21.53H117.32c-11.89,0-21.53,9.64-21.53,21.53v4.59c-1.61-3.3-3.7-5.62-5.99-7.66-5.11-4.57-11.48-6.98-18.66-7.61-6.79-.59-13.61-1.08-20.35-1.86-14.64-1.68-29.41-3.06-42.56-8.91-.41-.18-1.33,0-1.65.33-.34.36-.49,1.22-.31,1.66.42,1.08,1.04,2.06,1.63,3.05,5.1,8.46,12.27,14.28,22.86,15.6,8.21,1.02,16.44,1.96,24.7,2.76,6.74.65,13.25,1.75,18.75,5.23,2.74,1.74,5.15,3.82,7.1,6.43-.26.01-.47-.05-.65-.14-8.99-4.6-19.04-6.53-29.58-7.2-11.07-.7-22.15-1.34-32.86-3.44-.59-.12-1.19-.24-1.8-.23-1.34.04-2.02,1-1.53,2.16.17.4.43.8.76,1.07,2.56,2.08,4.93,4.44,7.78,6.12,6.98,4.13,15.19,5.25,23.71,5.54,10.98.38,21.49,2.12,30.77,7,3.09,1.62,5.89,3.6,8.22,6.2-.2-.07-.4-.13-.59-.21-9.32-4.53-19.59-6.65-30.41-7.31-8.25-.5-16.5-.95-24.77-1.35-.65-.03-1.66-.13-2.09.68-.44.8.09,1.58.5,2.04,3.05,3.39,6.97,5.66,11.27,7.42,5.82,2.38,12.25,2.85,18.72,3.23,8.1.47,15.91,1.85,23.17,4.66,2.57.99,6.3,2.95,8.47,4.63-5.42-1.8-13.25-3.71-19.15-4.1-9.17-.6-18.39-1.02-27.61-1.45-.64-.03-1.74-.14-2.09.72-.34.86.18,1.45.6,1.88,3.61,3.65,9.1,6.3,14.31,7.98,4.56,1.47,9.81,2.13,14.65,2.67,4.09.45,8.52,1.45,12.99,2.88,4.39,1.4,10.92,2.97,17.97,8.51,3.9,3.91,9.29,6.33,15.25,6.33h265.35c5.96,0,11.35-2.42,15.25-6.33,7.05-5.54,13.58-7.11,17.97-8.51,4.47-1.43,8.9-2.43,12.99-2.88,4.84-.54,10.1-1.2,14.65-2.67,5.21-1.68,10.71-4.33,14.31-7.98.42-.43.94-1.01.6-1.88-.35-.86-1.45-.75-2.09-.72-9.22.43-18.44.85-27.61,1.45-5.9.39-13.73,2.3-19.15,4.1,2.17-1.68,5.9-3.64,8.47-4.63,7.26-2.81,15.07-4.19,23.17-4.66,6.47-.38,12.9-.85,18.72-3.23,4.3-1.76,8.22-4.03,11.27-7.42.41-.46.93-1.23.5-2.04-.44-.81-1.45-.72-2.09-.68-8.27.41-16.52.85-24.77,1.35-10.82.66-21.09,2.78-30.41,7.31-.18.09-.39.14-.59.21,2.32-2.61,5.13-4.58,8.22-6.2,9.29-4.89,19.79-6.63,30.77-7,8.53-.29,16.73-1.42,23.71-5.54,2.84-1.68,5.22-4.04,7.78-6.12.33-.27.59-.67.76-1.07.49-1.16-.19-2.12-1.53-2.16-.62-.02-1.21.11-1.8.23-10.71,2.09-21.79,2.74-32.86,3.44-10.54.66-20.59,2.6-29.58,7.2-.18.1-.39.15-.65.14,1.95-2.6,4.35-4.69,7.1-6.43,5.51-3.49,12.01-4.58,18.75-5.23,8.27-.8,16.5-1.74,24.7-2.76,10.59-1.32,17.76-7.14,22.86-15.6.59-.98,1.21-1.97,1.63-3.05.17-.44.03-1.3-.31-1.66Zm-110.74,85.16H117.32c-8.64,0-15.66-7.03-15.66-15.66V31.81c0-8.63,7.03-15.66,15.66-15.66h265.35c8.64,0,15.66,7.03,15.66,15.66v48.37c0,8.64-7.03,15.66-15.66,15.66Z"/>
+                    </svg>
+                    <div id="box-content" style="width: 278px; height: 61px; position: absolute;">
+                        <div id="box-content-fill" style="width: 100%; height: 100%; margin-left: 8px; border-radius: 8px;">
+                            <div style="width: 13px; height: 3px; background: var(--fg); margin-top: 18px; margin-left: -8px"/>
+                            <div style="width: 5px; height: 5px; border: var(--fg) solid 3px; margin-top: 14px; margin-left: 4px; border-radius: 100%;"/>
+                            <p style="font-family: sans-serif; font-size: 24px; margin-top: 6px; margin-left: 20px; font-weight: 600;">Clickett</p>
+                            <p style="font-family: sans-serif; font-size: 16px; margin-top: 37px; margin-left: 9px; opacity: .6;">The Next-Gen Auto Clicker</p>
+                        </div>
+                        <div id="repo-icon-back">
+                            <svg id="repo-icon" style="margin: 10%" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 566.93 566.93"><defs><filter id="c" x="0" y="0" width="566.93" height="566.93" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/><feFlood flood-color="#fff" result="bg"/><feBlend in="cm" in2="bg"/></filter><mask id="b" x="0" y="0" width="566.93" height="566.93" maskUnits="userSpaceOnUse"><g filter="url(#c)"><path d="m366.98,436.81l-52.05,81.45c-7.3,11.43-24.37,10.16-29.91-2.22L120.21,147.68c-6.24-13.94,7.6-28.41,21.81-22.81l375.07,148.05c12.57,4.96,14.64,21.89,3.63,29.73l-78.52,55.9,118.55,112.2-74.18,79.92-119.57-113.86Z" fill="#fff"/></g></mask></defs><g mask="url(#b)"><circle cx="283.46" cy="283.46" r="283.46" fill="#fff"/></g></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
