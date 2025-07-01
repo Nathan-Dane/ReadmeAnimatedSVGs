@@ -2,7 +2,7 @@
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/title.svg">
-    <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/title-light.svg" style="min-width: 400px; max-width: 100%; width: 600px">
+    <img class="image" src="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/title-light.svg" style="max-width: 95%; width: 740px">
 </picture>
 
 
@@ -57,7 +57,7 @@ They are implemented differently (Raw SVG has simplifications)
 Uses regular SVG format:
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 x x">
+<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 x y">
   <!-- SVG elements -->
 </svg>
 ```
@@ -65,7 +65,7 @@ Uses regular SVG format:
 Can simply add style element:
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 x x">
+<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 x y">
   <style>
     .myClass {
       /* Your CSS */
@@ -130,6 +130,8 @@ Below is a template you can always use to make stuff:
 both x's and y's must be equal (I'll explain why later)
 
 Here is an example from my profile:
+</br>
+</br>
 <div align="center">
   <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Examples/WingBox.svg">
@@ -137,7 +139,8 @@ Here is an example from my profile:
   </picture>
 </div>
 
-
+</br>
+</br>
 
 
 <picture>
