@@ -7,13 +7,13 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp; **Add _flair_ to your Readmes with some CSS.**
 
-This is a tutorial and exploration for adding elements to GitHub Readmes (and some other _md documents_) that allow for much more variety and fanciness.
+This is a tutorial and exploration for adding elements to GitHub Readmes (and some other _md documents_) that allow for much more variety and ✨fanciness✨.
 
-The standard **MarkDown** feature set allows for very little variety, being little more than some left-aligned text, images, and tables.
+The standard **Markdown** feature set allows for very little variety, being little more than some left-aligned text, images, and tables.
 
 GitHub flavour markdown adds a handful of **HTML** abilities, like `Align` and `div` layouting. One other addition is `SVG` elements, which as it turns out, opens a door to many opportunities!
 
-> Basic **HTML** and **CSS** knowledge is assumed for this tutorial.
+> Basic **HTML** and **CSS** knowledge is assumed for this tutorial. Get an introduction [here](https://www.w3schools.com/html/html_css.asp)
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nathan-Dane/ReadmeAnimatedSVGs/refs/heads/main/Resources/heading-animating.svg">
@@ -35,7 +35,7 @@ While we can't use CSS in its full power as discussed later in **Limitations**, 
 
 For this case, we can define two types of SVG:
 * `Raw SVG`: A simple SVG, just with added CSS.
-* `HTML Embed`: Essentially an injected HTML document (which may include `<svg>` and `<path>` elements)
+* `HTML Embed`: Essentially an injected HTML document (which may still include `<svg>` and `<path>` elements)
 
 <table align="center">
   <thead>
@@ -99,6 +99,12 @@ Styling this with CSS is very straightforward, as you can simply add a `<style>`
 > If you are unfamiliar with SVGs, notice that I can add _classes_, _IDs_, and _styles_ to the child elements in the same way as usual HTML ones.
 
 From here, it's the same as usual. You can define `@keyframes`, set `animation` on elements, and other CSS properties.
+
+You can then add the SVG to the readme file as like any other image using HTML:\
+`<img class="image" src="path/my-image.svg" width="...px">`
+
+or using regular markdown:\
+`![My image](/path/my-image.svg)`
 
 Below is an example. The static SVG is the unedited output from Illustrator, and the animated one is an example of how to implement simple keyframe animations with CSS.
 
@@ -256,6 +262,8 @@ Refer to the table below to ever see if there are issues:
 Certain things are not possible, largely due to Webkit (Safari).
 
 Events are not passed (Pointer, hover, click, etc.)
+
+External requests are blocked (Style sheets, fonts, packages, online images etc.)
 
 JavaScript is not run
 
