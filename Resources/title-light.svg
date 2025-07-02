@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg fill="none" viewBox="0 0 460 30" width="460" height="30" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 470 30" width="470" height="30" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
@@ -7,9 +7,9 @@
                     --front: #1D1D1D;
                     --grad: radial-gradient(
                         circle at 100%,
-                        #db684b 0%,
+                        #ce5436 0%,
                         #da8b4f 75%,
-                        #df684a 100%
+                        #ce5436 100%
                     );
                 }
 

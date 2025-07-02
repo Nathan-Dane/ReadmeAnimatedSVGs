@@ -6,9 +6,9 @@
                 :root {
                     --grad: radial-gradient(
                         circle at 100%,
-                        #db684b 0%,
+                        #ce5436 0%,
                         #da8b4f 75%,
-                        #df684a 100%
+                        #ce5436 100%
                     );
                 }
 
@@ -16,7 +16,7 @@
                     position: absolute;
                     margin-top: 0;
                     line-height: 1.3;
-                    animation: animatedTextGradient 3s linear infinite;
+                    animation: animatedTextGradient 2.5s linear infinite;
                     background-image: var(--grad);
                     background-size: 200% auto;
                     color: transparent;
