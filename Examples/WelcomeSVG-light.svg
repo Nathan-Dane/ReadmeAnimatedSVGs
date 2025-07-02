@@ -2,20 +2,20 @@
 <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
 <style>
     #ring {
-        animation: rotate 10s cubic-bezier(0.860, -0.005, 0.135, 1.000) infinite;
+        animation: rotate 6s cubic-bezier(0.860, -0.005, 0.135, 1.000) infinite;
         transform-origin: center;
         fill: url(#MyGradient) red;
     }
     #text {
-        animation: pulse 10s cubic-bezier(0.860, -0.005, 0.135, 1.000) infinite;
+        animation: pulse 6s cubic-bezier(0.860, -0.005, 0.135, 1.000) infinite;
         transform-origin: center;
     }
     @keyframes rotate {
-        0%, 30% { transform: rotate(0deg); }
-        70%, 100% { transform: rotate(-360deg); }
+        0%, 15% { transform: rotate(0deg); }
+        85%, 100% { transform: rotate(-360deg); }
     }
     @keyframes pulse {
-        0%, 35%, 65%, 100% { transform: scale(1.15); }
+        0%, 20%, 80%, 100% { transform: scale(1.15); }
         50% { transform: scale(0.9); }
     }
 </style>
